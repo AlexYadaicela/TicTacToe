@@ -1,0 +1,42 @@
+*, *::before, *::after{box-sizing: border-box;}
+
+*{
+    font: inherit; 
+}
+body{
+    background-color: antiquewhite;
+}
+
+.page-title{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 500; 
+}
+
+.board{
+    text-align: center;
+}
+
+.board[data-start="true"]{
+    display: grid;
+    gap: 1.5rem;  
+    max-width: 20rem;
+    margin-inline: auto;
+    grid-template-columns: repeat(3, auto);
+}
+
+.board[data-start="true"] > *{
+    margin-inline: auto;
+    border-radius: 10px;
+    width: 5rem; 
+    height: 5rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 3px solid black;
+}
+
+.btn-position:hover{
+    cursor: pointer;
+}
+
+
